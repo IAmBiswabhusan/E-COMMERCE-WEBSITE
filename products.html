@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products • Bhusan Mart</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./footerstyle.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="Head container">
+        <div class="head_txt">
+          <p>Free shipping , 30-Day Return Or Refund Guarantee .</p>
+        </div>
+
+        <div class="sing_in_up">
+          <a href="#">Sign In</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="./public/image/logo.png" class="logo" width="80%" />
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Product</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="./addToCart.html" class="nav-link" id="cartValue">
+            <i class="fa-solid fa-cart-shopping"></i> 0
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- ================= PRODUCTS SECTION ================= -->
+  <section class="section-products">
+    <div class="container">
+      <h2 class="section-common--heading">Checkout Bhusan Mart Products</h2>
+      <p class="section-common--subheading">
+        Explore top tech gadgets at the best prices!
+      </p>
+    </div>
+
+    <div class="container">
+      <div id="productContainer"></div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= TEMPLATE FOR JS ================= -->
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+
+        <span class="category"></span>
+
+        <div class="imageContainer">
+          <img src="" alt="" class="productImage" />
+        </div>
+
+        <h2 class="productName"></h2>
+        <h3 class="productBrand"></h3>
+
+        <div class="productRating">
+          <i class="fa-solid fa-star" style="color:#ffd129"></i>
+          <i class="fa-solid fa-star" style="color:#ffd129"></i>
+          <i class="fa-solid fa-star" style="color:#ffd129"></i>
+          <i class="fa-solid fa-star" style="color:#ffd129"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color:#ffd129"></i>
+        </div>
+
+        <p class="productDescription"></p>
+
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+
+        <div class="productStockElement">
+          <p class="productProperty">Total Stock Available :</p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces) :</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        </button>
+
+      </article>
+    </div>
+  </template>
+    <!-- ================= FOOTER ================= -->
+     <footer></footer>
+    <script src="./footer.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

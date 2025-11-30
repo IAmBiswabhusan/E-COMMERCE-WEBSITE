@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • Bhusan Mart</title>
+
+  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="stylesheet" href="./footerstyle.css">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #e9f5ff, #ffffff);
+    }
+
+    .section-contact {
+      padding: 4rem 0;
+    }
+
+    .section-common--heading {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1b3c7a;
+    }
+
+    .section-common--subheading {
+      text-align: center;
+      margin-top: 0.4rem;
+      color: #5b6e8d;
+      font-size: 1.1rem;
+    }
+    .contact-grid {
+      max-width: 1200px;
+      margin: 2.5rem auto 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding: 0 20px;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.65);
+      padding: 2rem 2.5rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .contact-box label {
+      font-weight: 600;
+      margin-top: 1rem;
+      display: block;
+      color: #1a1a1a;
+    }
+
+    /* Inputs */
+    .contact-box input,
+    .contact-box textarea {
+      width: 100%;
+      padding: 14px 18px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 1px solid #dcdcdc;
+      font-size: 1rem;
+      background: #fff;
+      transition: 0.2s;
+    }
+
+    .contact-box input:focus,
+    .contact-box textarea:focus {
+      border-color: #ff7b40;
+      box-shadow: 0 0 8px rgba(255, 123, 64, 0.4);
+      outline: none;
+    }
+
+    /* Submit button */
+    .contact-submit-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, #ff7b40, #ff955c);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.25s;
+    }
+
+    .contact-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 125, 70, 0.45);
+    }
+    .map-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 450px;
+      border-radius: 14px;
+      border: none;
+    }
+    @media (max-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .map-box iframe {
+        min-height: 350px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .contact-box {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="Head container">
+        <div class="head_txt"><p>Free shipping , 30-Day Return Or Refund Guarantee.</p></div>
+
+        <div class="sing_in_up">
+          <a href="login.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="./public/image/logo.png" alt="Bhusan Mart" class="logo" width="80%">
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Product</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="./addToCart.html" class="nav-link" id="cartValue"><i class="fa-solid fa-cart-shopping"></i> 0</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section-contact">
+    <h2 class="section-common--heading">Contact Us</h2>
+    <p class="section-common--subheading">We're here to help || reach out anytime!</p>
+
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-box">
+        <form id="contactForm">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Your Name" required>
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Example@Bhusanmart.Com" required>
+
+          <label>Subject</label>
+          <input type="text" placeholder="Write Your Subject">
+
+          <label>Message</label>
+          <textarea rows="6" placeholder="Write Your Message Here..."></textarea>
+
+          <button class="contact-submit-btn" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.315681723489!2d85.82621937513493!3d20.26999591580268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909a590ccd1d7%3A0xbad6b235c6be9b0e!2sMaster%20Canteen%20Square%2C%20Railway%20Station%20Rd%2C%20Bhubaneswar%2C%20Odisha%20751001!5e0!3m2!1sen!2sin!4v1700630020000!5m2!1sen!2sin"
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+  <footer></footer>
+  <script src="./footer.js"></script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let popup = document.createElement("div");
+      popup.innerText = "Your message has been sent successfully!";
+      popup.style.position = "fixed";
+      popup.style.bottom = "30px";
+      popup.style.right = "30px";
+      popup.style.background = "#28a745";
+      popup.style.padding = "14px 22px";
+      popup.style.color = "#fff";
+      popup.style.fontSize = "1rem";
+      popup.style.borderRadius = "8px";
+      popup.style.boxShadow = "0 6px 15px rgba(0,0,0,0.2)";
+      popup.style.zIndex = "9999";
+      document.body.appendChild(popup);
+
+      setTimeout(() => popup.remove(), 3000);
+      this.reset();
+    });
+  </script>
+</body>
+</html>

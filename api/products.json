@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Computers",
+    "brand": "MacBook",
+    "price": 999.99,
+    "stock": 50,
+    "description": "Experience powerful performance and sleek design with ExampleBrand’s latest laptop. Equipped with a quad-core i5 processor, 8GB RAM, and a fast 256GB SSD, it ensures seamless multitasking and productivity. The stunning 14-inch Full HD display delivers crisp visuals for work and entertainment.",
+    "image": "/image/lapi.png"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "category": "Mobiles",
+    "brand": "Apple",
+    "price": 499.99,
+    "stock": 100,
+    "image": "/image/iphone.png",
+    "description": "Stay connected in style with the TechGadget Smartphone. Featuring a vibrant 6.2-inch display, powerful dual 12MP cameras, and ample 128GB storage, it’s built for both creativity and convenience. With a long-lasting 4000mAh battery, you can enjoy all-day performance on the go."
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphones",
+    "category": "Audio",
+    "brand": "CMF",
+    "price": 149.99,
+    "stock": 30,
+    "image": "/image/headphone.png",
+    "description": "Immerse yourself in superior sound with SoundBeats Wireless Headphones. Engineered for comfort and clarity, these over-ear headphones deliver rich audio and deep bass for up to 20 hours on a single charge. Perfect for music lovers and professionals alike."
+  },
+  {
+    "id": 4,
+    "name": "Watches",
+    "category": "Wearables",
+    "brand": "Boat",
+    "price": 1999.99,
+    "stock": 20,
+    "image": "/image/watch.png",
+    "description": "Elevate your lifestyle with the FitTech Smartwatch. Designed with a brilliant 1.3-inch AMOLED display and a premium water-resistant finish, it seamlessly blends technology and style. Track your health, fitness, and notifications — all from your wrist."
+  },
+  {
+    "id": 5,
+    "name": "Speakers",
+    "category": "Audio",
+    "brand": "Sony",
+    "price": 1499.99,
+    "stock": 30,
+    "image": "/image/speakers.png",
+    "description": "Bring your music to life with SoundBeats Wireless Speakers. Featuring crisp highs, rich bass, and powerful Bluetooth connectivity, these portable speakers deliver immersive sound wherever you go — perfect for parties, travel, or home entertainment."
+  },
+  {
+    "id": 6,
+    "name": "Television",
+    "category": "Video",
+    "brand": "Samsung",
+    "price": 45999.99,
+    "stock": 20,
+    "image": "/image/tv.png",
+    "description": "Transform your viewing experience with the Samsung Smart TV. Enjoy cinematic visuals with vibrant colors, smart streaming capabilities, and a sleek modern design that fits any living space. Entertainment meets innovation in one brilliant display."
+  },
+  {
+    "id": 7,
+    "name": "Tablet",
+    "category": "Mobiles",
+    "brand": "Apple",
+    "price": 29999.99,
+    "stock": 40,
+    "image": "image/tablet.png",
+    "description": "Discover portability and power combined in the iPad Air Tablet. Featuring the powerful Apple M3 chip, With a powerful CPU, GPU and Neural Engine, it’s nearly 2x faster than iPad Air with M1 chip.3 The GPU architecture brings advanced graphics whether you’re working, streaming, creating or gaming. All with amazing efficiency for all‑day battery life."
+  },
+  {
+    "id": 8,
+    "name": "Gaming Console",
+    "category": "Gaming",
+    "brand": "PlayPro",
+    "price": 3999.99,
+    "stock": 25,
+    "image": "image/console.png",
+    "description": "Step into next-gen gaming with the PlayPro Console. Featuring lightning-fast performance, 4K graphics, and an extensive library of immersive titles, it delivers unmatched entertainment for casual and pro gamers alike."
+  },
+  {
+    "id": 9,
+    "name": "Camera",
+    "category": "Photography",
+    "brand": "Canon",
+    "price": 35599.99,
+    "stock": 15,
+    "image": "image/camera.png",
+    "description": "Capture every moment in stunning detail with the PixelShot DSLR Camera. Boasting a 24.2MP sensor, 4K video recording, and fast autofocus, it’s designed for creators who demand professional performance in every shot."
+  }
+]

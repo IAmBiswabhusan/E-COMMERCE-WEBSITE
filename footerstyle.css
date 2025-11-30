@@ -1,0 +1,290 @@
+/* ==========================================================
+   GLOBAL FOOTER BACKGROUND (EXACT MATCH)
+========================================================== */
+.footer-wrapper {
+  width: 100%;
+  padding: 70px 30px 40px;
+  background: radial-gradient(
+      circle at bottom,
+      rgba(120, 160, 255, 0.15) 0%,
+      rgba(30, 40, 70, 0.1) 30%
+    ),
+    linear-gradient(180deg, #0f1624 0%, #0a0e17 100%);
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bottom glow reflection */
+.footer-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 80%;
+  height: 80px;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse,
+    rgba(140, 80, 255, 0.25),
+    rgba(255, 100, 80, 0.25),
+    transparent
+  );
+  filter: blur(45px);
+  opacity: 0.7;
+}
+
+/* ==========================================================
+   GRID LAYOUT
+========================================================== */
+.footer-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ==========================================================
+   GLASS CARDS (exact match)
+========================================================== */
+.glass-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 30px;
+  border-radius: 22px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+}
+
+.glass-box:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-5px);
+}
+
+/* ==========================================================
+   LOGO + TAGLINE
+========================================================== */
+.footer-logo {
+  width: 200px;
+  margin-bottom: 18px;
+}
+
+.tagline {
+  font-size: 15px;
+  color: #c9c9c9;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+/* ==========================================================
+   SOCIAL ICONS (perfect center + neon glow)
+========================================================== */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.09);
+  color: white;
+  font-size: 20px;
+  transition: 0.25s;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+/* Neon hover glow effects */
+.social-icons a:nth-child(1):hover {
+  box-shadow: 0 0 14px #1877f2;
+  background: #1877f2;
+}
+
+.social-icons a:nth-child(2):hover {
+  box-shadow: 0 0 14px #1da1f2;
+  background: #1da1f2;
+}
+
+.social-icons a:nth-child(3):hover {
+  box-shadow: 0 0 14px #c13584;
+  background: #c13584;
+}
+
+.social-icons a:nth-child(4):hover {
+  box-shadow: 0 0 14px #ff0000;
+  background: #ff0000;
+}
+.social-icons a:nth-child(5):hover {
+  box-shadow: 0 0 14px #1da1f2;
+  background: #1da1f2;
+}
+
+
+.glass-box h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 18px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+/* ==========================================================
+   SHOP + ABOUT (2 column layout)
+========================================================== */
+.footer-flex-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+  flex-wrap: wrap;   
+}
+.footer-flex-two .cards-img {
+  width: 200px !important;
+  display: block;
+  margin: 25px auto 0;   
+}
+
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-col a {
+  display: block;
+  margin: 6px 0;
+  color: #d2d2d2;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.footer-col a:hover {
+  color: #ff8050;
+  transform: translateX(5px);
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+.glass-box a {
+  color: #d2d2d2;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 8px 0;
+  transition: 0.25s;
+}
+
+.glass-box a:hover {
+  color: #ff8050;
+  transform: translateX(5px);
+}
+
+/* ==========================================================
+   NEWSLETTER BOX
+========================================================== */
+.newsletter-box {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  outline: none;
+}
+
+.newsletter-box input::placeholder {
+  color: #aaa;
+}
+
+.newsletter-box button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: #111;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b3c, #ff8c5d);
+  box-shadow: 0 0 18px rgba(255, 120, 70, 0.75);
+  transition: 0.25s;
+}
+
+.newsletter-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255, 120, 70, 1);
+}
+
+/* ==========================================================
+   BOTTOM COPYRIGHT TEXT
+========================================================== */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #c5c5c5;
+}
+
+.footer-bottom span {
+  color: #ff8050;
+  font-weight: 600;
+}
+
+/* PRIVACY | TERMS | SITEMAP */
+.bottom-links {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.bottom-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.bottom-links a:hover {
+  color: #ff8050;
+}
+.cards-img{
+    width: 250px;
+    height: auto;
+  display: block;
+  margin: 25px auto 0;   
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-flex-two {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
