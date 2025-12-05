@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- GLASS BOX 1 — LOGO + SOCIAL -->
       <div class="glass-box" style="text-align:center;">
-  <img src="./public/image/logo.png" class="footer-logo" />
+  <img src="/image/logo.png" class="footer-logo" />
 
   <p class="tagline">Your destination for cutting-edge gadgets.</p>
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <a href="#">Careers</a>
       <a href="#">Press</a>
     </div>
-    <img src="./public/image/card2.png" 
+    <img src="/image/card2.png" 
              class="cards-img"
              style="margin-top:18px; width:160px;" />
   </div>
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <button>SUBSCRIBE</button>
         </div>
 
-        <img src="./public/image/card.png" 
+        <img src="/image/card.png" 
              class="cards-img"
              style="margin-top:18px; width:160px;" />
       </div>
