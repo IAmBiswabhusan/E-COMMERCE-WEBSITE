@@ -196,7 +196,7 @@
     </div>
   </section>
   <footer></footer>
-  <script src="./footer.js"></script>
+<script type="module" src="/src/footer.js"></script>
   <script>
     document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
@@ -219,5 +219,7 @@
       this.reset();
     });
   </script>
+  <script src="./public/auth.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

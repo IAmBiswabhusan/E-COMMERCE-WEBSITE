@@ -18,10 +18,16 @@
         <h2>Welcome Back</h2>
         <p class="auth-sub">Sign in to continue shopping</p>
 
-        <input type="email" id="loginEmail" placeholder="Email" />
-        <input type="password" id="loginPassword" placeholder="Password" />
+        <!-- EMAIL -->
+        <input type="email" id="loginEmail" placeholder="Email" required />
 
-        <button class="auth-btn" onclick="loginUser()">Sign In</button>
+        <!-- PASSWORD -->
+        <input type="password" id="loginPassword" placeholder="Password" required />
+
+        <!-- FIXED BUTTON -->
+        <button type="button" class="auth-btn" onclick="loginUser()">
+            Sign In
+        </button>
 
         <p class="switch-text">
             Don't have an account? <a href="signup.html">Create Account</a>
@@ -30,6 +36,8 @@
 
 </div>
 
-<script src="auth.js"></script>
+<!-- Load your fixed auth.js -->
+<script src="./public/auth.js"></script>
+
 </body>
 </html>
